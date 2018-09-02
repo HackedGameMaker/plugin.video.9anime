@@ -28,7 +28,7 @@ class NineAnimeBrowser(BrowserBase.BrowserBase):
     re.compile("<li>\s<a\shref=\"/genre\/(.+?)\"\stitle=\"(.+?)\">",
                re.DOTALL)
     _EPISODES_RE = \
-    re.compile("<li>\s<a.+?data-id=\"(.+?)\" data-base=\"(\d+)\".+?data-comment=\"(.+?)\".+?data-title=\"(.+?)\".+?href=\"\/watch\/.+?\">(.+?)</a>\s</li>",
+    re.compile("<li>\s<a.+?data-id=\"(.+?)\" data-base-url=\"(\d+)\".+?data-comment=\"(.+?)\".+?data-title=\"(.+?)\".+?href=\"\/watch\/.+?\">(.+?)</a>\s</li>",
                re.DOTALL)
     _PLOT_RE = \
     re.compile('<div class="desc">(.+?)</div>', re.DOTALL)
